@@ -2,7 +2,7 @@ GrydValidator
 =========
 An easy to use Node.js input validation library for Express.js or Standalone use.
 
-###Features
+### Features
   - Extends the Express.js request object with validation functions
   - Stand-alone function for manual use
   - Simple structure for defining validation rules
@@ -24,7 +24,7 @@ Tests
 Usage
 ----
 
-#####Extending Express.js
+##### Extending Express.js
 ```js
     var express = require('express'),
         GrydValidator = require('gryd-validator');
@@ -54,7 +54,7 @@ Usage
     });
 ```
 
-#####Standalone use
+##### Standalone use
 ```js
     var GrydValidate = require('gryd-validator').GrydValidate;
     
@@ -87,53 +87,53 @@ Usage
 Available functions (Express)
 ----
 
-####req.GrydValidate(inputObj,rulesObj,callback)
+#### req.GrydValidate(inputObj,rulesObj,callback)
     Validates the given input fields against the provided rules object. The callback returns null or an object containing errors.
 
-####req.GrydValidateParams(rulesObj,callback)
+#### req.GrydValidateParams(rulesObj,callback)
     A convieniece function which runs validation against URL Parameters
 
-####req.GrydValidateBody(rulesObj,callback)
+#### req.GrydValidateBody(rulesObj,callback)
     A convieniece function which runs validation against the request body
 
-####req.GrydValidateQuery(rulesObj,callback)
+#### req.GrydValidateQuery(rulesObj,callback)
     A convieniece function which runs validation against querystring fields
     
-####app.GrydExtend(name,fn)
+#### app.GrydExtend(name,fn)
     Add your own validation methods to GrydValidator. Functions should return an error message (String) or false on success.
     
     
 Validation Methods
 ----
-####required
+#### required
 Checks that the field has a value
-####requiredWith:fieldName
+#### requiredWith:fieldName
 Checks that the field has a value if another field also has a value
-####requiredWithout:fieldName
+#### requiredWithout:fieldName
 Checks that the field has a value if another field does not have a value
-####regex:expression
+#### regex:expression
 Tests that the field matches the given expression
-####array
+#### array
 Requires that a field's value be an array
-####sameAs:fieldName
+#### sameAs:fieldName
 Requires that the values of the field and secondary field are the same
-####num[:min[:max]]
+#### num[:min[:max]]
 Requires that the value be a number. Optional min + max values
-####url
+#### url
 Requires that the value be a valid URL
-####email
+#### email
 Requires that the value be a valid email address
-####bool
+#### bool
 Requires that the value be a boolean value, 1 or 0, or string matching true or false
-####date[:after[:before]]
+#### date[:after[:before]]
 Requires that the value be a valid date. Can accept any value that javascript is able to convert to a Date object. After is an optional minimum date and Before is an optional maximum date. These values are provided in milliseconds.
-####different:fieldName
+#### different:fieldName
 Requires that the value of the field be different than the value of another field.
 
 
 Change Log
 ----
-####0.1.0
+#### 0.1.0
 >Initial development
 
 
