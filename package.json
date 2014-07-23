@@ -1,15 +1,20 @@
 {
-  "name": "gryd-validator",
-  "version": "0.0.0",
+  "name": "GrydValidator",
+  "version": "0.1.0",
   "description": "Input validation extension of the Express.js request object",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/tests.js"
+    "test": "mocha -b tests"
   },
-  "author": "",
+  "author": "Aaron Blankenship",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git@git.gryd.io:gryd/gryd-validator.git"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "express": "^4.6.1",
+    "mocha": "^1.20.1"
   }
 }
