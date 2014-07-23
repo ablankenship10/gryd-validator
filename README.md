@@ -91,13 +91,13 @@ Available functions (Express)
     Validates the given input fields against the provided rules object. The callback returns null or an object containing errors.
 
 #### req.GrydValidateParams(rulesObj,callback)
-    A convieniece function which runs validation against URL Parameters
+    A convenience function which runs validation against URL Parameters
 
 #### req.GrydValidateBody(rulesObj,callback)
-    A convieniece function which runs validation against the request body
+    A convenience function which runs validation against the request body
 
 #### req.GrydValidateQuery(rulesObj,callback)
-    A convieniece function which runs validation against querystring fields
+    A convenience function which runs validation against querystring fields
     
 #### app.GrydExtend(name,fn)
     Add your own validation methods to GrydValidator. Functions should return an error message (String) or false on success.
