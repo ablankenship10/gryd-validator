@@ -99,7 +99,7 @@ Available functions (Express)
 #### req.GrydValidateQuery(rulesObj,callback)
     A convenience function which runs validation against querystring fields
     
-#### app.GrydExtend(name,fn)
+#### app.GrydValidatorExtend(name,fn)
     Add your own validation methods to GrydValidator. Functions should return an error message (String) or false on success.
     
     
