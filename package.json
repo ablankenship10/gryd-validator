@@ -1,6 +1,6 @@
 {
   "name": "gryd-validator",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An easy to use Node.js input validation library for Express.js or Standalone use.",
   "keywords":["input","validation","validator","express","gryd","framework"],
   "main": "index.js",
