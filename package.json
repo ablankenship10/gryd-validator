@@ -1,7 +1,7 @@
 {
   "name": "gryd-validator",
-  "version": "0.1.1",
-  "description": "Input validation extension of the Express.js request object",
+  "version": "0.1.2",
+  "description": "An easy to use Node.js input validation library for Express.js or Standalone use.",
   "main": "index.js",
   "scripts": {
     "test": "mocha -b tests"
